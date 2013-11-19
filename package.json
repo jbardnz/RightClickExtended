@@ -1,0 +1,12 @@
+{
+    "name": "jarradsalmon.rightClickExtended",
+    "title": "Right Click Extended",
+    "description": "Adds Cut, Copy and Paste options to the right click menu",
+    "homepage": "https://github.com/jbardnz/Brackets-RightClickExtended",
+    "version": "1.0.0",
+    "author": "Jarrad Salmon <jbardnz@gmail.com>",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.30.0"
+    }
+}
