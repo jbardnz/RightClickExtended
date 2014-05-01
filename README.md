@@ -1,4 +1,4 @@
-Brackets.io - RightClickExtended
+RightClickExtended
 ==================
 
 Adds in Cut, Copy and Paste functions to the right click menu in Brackets.io.
