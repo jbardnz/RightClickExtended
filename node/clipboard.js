@@ -5,13 +5,14 @@
     var domainManager;
     
     function load(){
-        
+
     }
     
     
     function bracketPaste() {
         
         node_copy_paste.paste(function(e, content){
+
             domainManager.emitEvent('clipboard', 'paste', {'content':content});        
         });
 
@@ -20,7 +21,6 @@
     function bracketCopy(userSelection) {
         
         node_copy_paste.copy(userSelection);
-
     }
     
 
