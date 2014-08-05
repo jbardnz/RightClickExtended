@@ -84,7 +84,10 @@ define(function (require, exports, module) {
         
         var thisEditor = EditorManager.getCurrentFullEditor();
         
-        nodeConnection.domains.clipboard.callCopy(thisEditor._codeMirror.getSelection());
+        //check selection is not blank
+        if(thisEditor._codeMirror.getSelection().trim() != ''){
+            nodeConnection.domains.clipboard.callCopy(thisEditor._codeMirror.getSelection());
+        }
         
     }
     
