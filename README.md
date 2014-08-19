@@ -6,6 +6,10 @@ Adds in Cut, Copy and Paste functions to the right click menu in Brackets.io.
 It uses the node-copy-paste library for accessing the clipboard: https://github.com/xavi-/node-copy-paste
 
 ## Change log
+* 1.3.1
+  * Fixed cursor position after cut
+* 1.3.0
+  * Added multi-langauge support
 * 1.2.0
   * Cursor now sits at the end of pasted content
   * No longer copies blank selections
