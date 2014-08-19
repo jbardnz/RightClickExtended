@@ -100,7 +100,7 @@ define(function (require, exports, module) {
         nodeConnection.domains.clipboard.callCopy(thisEditor._codeMirror.getSelection());
         
         thisEditor._codeMirror.replaceSelection('');
-        thisEditor._codeMirror.setCursor(cp);
+        //thisEditor._codeMirror.setCursor(cp);
     }
     
     

@@ -3,7 +3,7 @@
     "title": "Right Click Extended",
     "description": "Adds Cut, Copy and Paste options to the right click menu - now with multi-langauge support",
     "homepage": "https://github.com/jbardnz/RightClickExtended",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "author": "Jarrad Salmon <jbardnz@gmail.com>",
     "license": "MIT",
     "engines": {
