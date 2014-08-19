@@ -11,6 +11,7 @@ define(function (require, exports, module) {
     var ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
     var AppInit        = brackets.getModule("utils/AppInit");
     var nodeConnection = new NodeConnection();
+    var Strings        = require("strings");
     
     function chain() {
         var functions = Array.prototype.slice.call(arguments, 0);
@@ -104,9 +105,9 @@ define(function (require, exports, module) {
     }
     
     
-    CommandManager.register("Cut", right_click_cut, handleRightClickCut);
-    CommandManager.register("Copy", right_click_copy, handleRightClickCopy);
-    CommandManager.register("Paste", right_click_paste, handleRightClickPaste);
+    CommandManager.register("Strings.CUT", right_click_cut, handleRightClickCut);
+    CommandManager.register("Strings.COPY", right_click_copy, handleRightClickCopy);
+    CommandManager.register("Strings.PASTE", right_click_paste, handleRightClickPaste);
     
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(right_click_cut);
