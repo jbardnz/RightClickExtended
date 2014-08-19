@@ -10,6 +10,7 @@ define(function (require, exports, module) {
     var NodeConnection = brackets.getModule("utils/NodeConnection");
     var ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
     var AppInit        = brackets.getModule("utils/AppInit");
+    var bracketsStrings = brackets.getModule("strings")
     var nodeConnection = new NodeConnection();
     
     function chain() {
@@ -54,7 +55,6 @@ define(function (require, exports, module) {
             });
             loadPromise.done(function (err) {
                 //loaded
-
             });
             return loadPromise;
         }
@@ -77,7 +77,7 @@ define(function (require, exports, module) {
     
     //Function to run when the menu item is clicked
     function handleRightClickPaste() {
-        
+
         //Paste text
         nodeConnection.domains.clipboard.callPaste();
     }
@@ -104,9 +104,9 @@ define(function (require, exports, module) {
     }
     
     
-    CommandManager.register("Cut", right_click_cut, handleRightClickCut);
-    CommandManager.register("Copy", right_click_copy, handleRightClickCopy);
-    CommandManager.register("Paste", right_click_paste, handleRightClickPaste);
+    CommandManager.register(bracketsStrings.CMD_CUT, right_click_cut, handleRightClickCut);
+    CommandManager.register(bracketsStrings.CMD_COPY, right_click_copy, handleRightClickCopy);
+    CommandManager.register(bracketsStrings.CMD_PASTE, right_click_paste, handleRightClickPaste);
     
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuDivider();
     Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addMenuItem(right_click_cut);
