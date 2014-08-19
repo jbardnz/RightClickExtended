@@ -4,5 +4,5 @@
 define({
     "COPY"  : "Copia",
     "CUT"   : "Taglia",
-    "PASTE" : "Incolla",
+    "PASTE" : "Incolla"
 });
