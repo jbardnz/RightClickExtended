@@ -9,7 +9,7 @@ It uses the node-copy-paste library for accessing the clipboard: https://github.
 * 1.3.1
   * Fixed cursor position after cut
 * 1.3.0
-  * Added multi-langauge support
+  * Added multi-language support
 * 1.2.0
   * Cursor now sits at the end of pasted content
   * No longer copies blank selections
