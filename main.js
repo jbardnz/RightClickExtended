@@ -10,7 +10,7 @@ define(function (require, exports, module) {
     var NodeConnection = brackets.getModule("utils/NodeConnection");
     var ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
     var AppInit        = brackets.getModule("utils/AppInit");
-    var bracketsStrings = brackets.getModule("strings")
+    var bracketsStrings = brackets.getModule("strings");
     var nodeConnection = new NodeConnection();
     
     function chain() {
@@ -87,7 +87,7 @@ define(function (require, exports, module) {
         var thisEditor = EditorManager.getCurrentFullEditor();
         
         //check selection is not blank
-        if(thisEditor._codeMirror.getSelection().trim() != ''){
+        if(thisEditor._codeMirror.getSelection().trim() !== ''){
             nodeConnection.domains.clipboard.callCopy(thisEditor._codeMirror.getSelection());
         }
         
